@@ -20,5 +20,5 @@ musical_groups = [
 ]
 # Your code here
 for group in musical_groups:
-        if len(group) == 3:
+        if len(group) == 4:
             print(", ".join(group))
