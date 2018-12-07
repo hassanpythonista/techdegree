@@ -4,6 +4,7 @@ print('i am {} {}'.format(name, prenom))
 print('i am {1} {0}'.format(name, prenom))
 print(f'i am {name} {prenom}')'''
 
+#variables
 '''a = 1
 b = 2
 print("bigger") if a > b else print("smaller")'''
