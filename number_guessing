@@ -1,0 +1,25 @@
+import random
+
+print(''' Welcome to the number guessing game! 
+------------------------------------------------''')
+
+def start_game():
+    count = 0
+    solution = random.randint(1, 10)
+    number = int(input('Pick a number between 1 and 10! '))
+    while True:
+        count += 1
+        if number > solution:
+            print("It's lower! ")
+            number = int(input('Pick a number between 1 and 10! '))
+            continue
+        elif number < solution:
+            print("It's greater! ")
+            number = int(input('Pick a number between 1 and 10! '))
+            continue
+        else:
+            print('Got it! It took you {} tries'.format(count))
+            ask = input('Would you like to play again Y/N? ')
+            while ask.lower() == 'yes':
+                continue
+start_game()
